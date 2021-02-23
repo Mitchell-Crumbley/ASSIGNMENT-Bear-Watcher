@@ -1,8 +1,15 @@
 import '../styles/main.scss';
+import pageIntro from './components/pageIntroduction';
+import showForm from './components/showForm';
+import river from './components/river';
+import handleButtonEvents from './helpers/data/domEvents';
+import { bears } from './helpers/data/bearArray';
 
 const init = () => {
-  $('#app').html('<h1>HELLO! You are up and running!</h1>');
-  console.log('YOU ARE UP AND RUNNING!');
+  pageIntro();
+  showForm();
+  river(bears);
+  handleButtonEvents();
 };
 
 init();
