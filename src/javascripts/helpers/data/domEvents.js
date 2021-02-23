@@ -4,7 +4,7 @@ import startMusic from '../startMusic';
 
 const handleButtonEvents = () => {
   document.querySelector('#bearForm').addEventListener('submit', getFormInfo);
-  document.querySelector('#bearForm').addEventListener('click', startMusic);
+  document.querySelector('#bearForm').addEventListener('submit', startMusic);
   document.querySelector('#river').addEventListener('click', fishButtons);
 };
 
