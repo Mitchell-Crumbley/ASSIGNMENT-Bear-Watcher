@@ -35,6 +35,8 @@ const fishButtons = (e) => {
   const index = e.target.id;
   const time = new Date();
 
+  // Casey walked a few of us through this. You can target the specific button on the card using if else statements.
+
   if (e.target.type === 'button' && button.includes('missed')) {
     bears[index].missedFish.unshift(time);
     river(bears);
